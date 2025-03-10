@@ -25,6 +25,7 @@ class _LoginPageState extends State<LoginPage> {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500),
         ),
         backgroundColor: Colors.blue,
+        automaticallyImplyLeading: false,
       ),
 
       body: Form(

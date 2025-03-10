@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
             foregroundColor: WidgetStatePropertyAll(Colors.white)
           ),
         ),
+        scaffoldBackgroundColor: Colors.white,
 
         
       ),
