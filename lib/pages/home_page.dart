@@ -7,12 +7,10 @@ class HomePage extends StatefulWidget {
     super.key,
     required this.username,
     this.panggilan,
-    required this.password,
   });
 
   final String username;
   final String? panggilan;
-  final String password;
 
   @override
   State<HomePage> createState() => _HomePageState();
