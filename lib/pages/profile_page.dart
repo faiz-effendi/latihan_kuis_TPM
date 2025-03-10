@@ -178,9 +178,13 @@ class ProfilePage extends StatelessWidget {
               SendButton(
                 text: "Logout",
                 onPressed: () {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                    return LoginPage();
-                  }));
+                  Navigator.pushAndRemoveUntil(
+                    context, 
+                    MaterialPageRoute(builder: (context) {
+                      return LoginPage();
+                    }), 
+                    (Route<dynamic> route) => false
+                  );
                 },
               ),
 
